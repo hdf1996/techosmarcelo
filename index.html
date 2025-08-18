@@ -1,125 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta name="author" content = "Luis Fernando Farji - www.6700.com.ar"/>
-	<meta name="copyright" content = "Luis Fernando Farji - www.6700.com.ar"/>
-	<meta name="description" content = "Pagina Principal"/>
-	<meta name="keywords" content = "techos marcelo, goteras, tinglados, moreno, capital federal, teja, pizarra, buenos aires, techo chapa, zona oeste"/>
-	<title>Techos Marcelo - Una buena casa necesita un buen techo</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="LANGUAGE" content="es" />
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript">
-
-	function mycarousel_initCallback(carousel)
-	{
-	    // Disable autoscrolling if the user clicks the prev or next button.
-	    carousel.buttonNext.bind('click', function() {
-	        carousel.startAuto(0);
-	    });
-
-	    carousel.buttonPrev.bind('click', function() {
-	        carousel.startAuto(0);
-	    });
-
-	    // Pause autoscrolling if the user moves with the cursor over the clip.
-	    carousel.clip.hover(function() {
-	        carousel.stopAuto();
-	    }, function() {
-	        carousel.startAuto();
-	    });
-	};
-
-	jQuery(document).ready(function() {
-	    jQuery('#carrousel').jcarousel({
-	        auto: 2,
-	        wrap: 'circular',
-			size: 3,
-			scroll: 1,
-	        initCallback: mycarousel_initCallback
-	    });
-	});
-	</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techos Marcelo | Reparación y Construcción</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="css/styles.css" rel="stylesheet"> <!-- CSS externo -->
 </head>
 <body>
-	<div id="header">
-		<div id="logowrapper">
-			<div id="logosubwrapper">
-				<a href="#logo" id="logo">Techos Marcelo</a>
-				<div id="telefono">llamenos al 1158700201</div>
-			</div>
-		</div>
-		<ul id="nav">
-			<li class="selected"><a href="index.html"><h1>Inicio</h1></a></li>
-			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="obras.html">Obras</a></li>
-			<li><a href="contactenos.html">Contactenos</a></li>
-			<li class="facebook"><a target="_blank" href="http://www.facebook.com/pages/techos-marcelo/213220168718355"><img src="imagenes/facebook.png" width="30"/>Facebook</a></li>
-		</ul>
-	</div>
-	<div id="main">
-		<div class="jcarousel-skin-tango" id="carrousel">
-					<ul>
-						<li><img src="imagenes/obra046.jpg" width="800" height="401" alt="Slide 1"></img></li>
-						<li><img src="imagenes/obra047.jpg" width="800" height="401" alt="Slide 2"></img></li>
-						<li><img src="imagenes/obra048.jpg" width="800" height="401" alt="Slide 3"></img></li>
-					</ul>
-		</div>
-		<div id="lema"><img src="imagenes/casa.gif"/><strong>El techo es la parte mas importante de la casa</strong><br/><br/>
 
-			El techo es una parte o superficie superior que funciona como protector, cubriendonos ante distintos factores climaticos calor, viento, lluvia, el mismo debe ser de calidad, bien hecho se pagara solo ya que nos permitira ahorrar en calefacción y en ventilación en tiempos extremos (invierno-verano). Su capacidad principal es la de no permitir el paso del agua, recuerde eso al pensar en la importancia de realizar un buen techado en su casa.<br/><br/>
-			Para un mayor asesoramiento llamenos al 1158700201
-		</div>
-		<div id="servicios">
-			<div id="flecha"><span>Nuestros servicios</span></div><br/><br/><br/>
-			<div id="boxes">
-				<div class="boxi">
-					<div class="title">Colocación</div>
-					<div><p>Realizamos la colocación del techo desde cero, con los mejores materiales, de madera, chapa, teja francesa, pizarras y otros modelos</p>
-						<a href="colocacion.html">Ver mas</a>
-					</div>
-				</div>
-				<div class="boxi">
-					<div class="title">Reparación</div>
-					<div><p>Parte de la carpeta esta rota, torcida o no tiene la calidad que se merece su techo, los cambios deben ser realizados de forma inmediata </p>
-						<a href="reparacion.html">Ver mas</a>
-					</div>
-				</div>
-				<div class="boxi">
-					<div class="title">Goteras</div>
-					<div><p>La aparición de Goteras y filtraciones en las paredes es debido a grietas o acumulación de material en la cubierta, pero todo eso tiene solución </p>
-						<a href="goteras.html">Ver mas</a>
-					</div>
-				</div>
-				<div class="boxi">
-					<div class="title">Mantenimiento</div>
-					<div><p>El mantenimiento preventivo del estado del techo evita que realicemos gastos mucho mas grandes, una vez al año le recomendamos realizarlo </p>
-						<a href="mantenimiento.html">Ver mas</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">llamenos al 1158700201 		<br/> © Diseño Gráfico <a href="www.6700.com.ar">www.6700.com.ar</a> 2008-2014 | All right reserved | <a href="index.html">Inicio</a> | <a href="servicios.html">Servicios</a> | <a href="obras.html">Obras</a> | <a href="contactenos.html">Contacto</a> | Design by 6700</div>
-	<script type="text/javascript">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Techos Marcelo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36912493-1']);
-  _gaq.push(['_setDomainName', 'techosmarcelo.com.ar']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
+  <!-- HERO CAROUSEL -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
 
-</script>
+    <!-- Imágenes -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/obra046.jpg" class="d-block w-100" alt="Trabajo 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-shadow">Techos Marcelo</h1>
+          <p>Reparación y construcción de techos</p>
+          <a href="https://wa.me/5491137724764" class="btn btn-warning btn-lg">💬 Pedir Presupuesto</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/obra047.jpg" class="d-block w-100" alt="Trabajo 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-shadow">Confianza y experiencia</h1>
+          <p>Impermeabilizaciones y urgencias 24hs</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/obra048.jpg" class="d-block w-100" alt="Trabajo 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-shadow">Calidad garantizada</h1>
+          <p>Más de 20 años de trayectoria</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">🔨 Reparación de techos</h5>
+              <p class="card-text">Soluciones rápidas y seguras para goteras, filtraciones y daños.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">🏠 Construcción de techos</h5>
+              <p class="card-text">Diseño y armado de techos nuevos con materiales de calidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">💧 Impermeabilizaciones</h5>
+              <p class="card-text">Protección total contra la humedad y filtraciones de agua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">⚡ Urgencias 24hs</h5>
+              <p class="card-text">Servicio inmediato para emergencias en techos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1">📞 11 5870 0201 | 📍 Lobos 870 - Paso del Rey | ✉ info@ejemplo.com</p>
+    <div class="d-flex justify-content-center">
+      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
+         class="btn btn-social mx-2 text-white"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
+   class="whatsapp-float" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
 
 </body>
 </html>
