@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Techos Marcelo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú de navegación" title="Abrir menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
@@ -30,7 +30,7 @@
   </nav>
 
   <!-- SERVICIOS -->
-  <section class="servicios-bg d-flex align-items-center" style="min-height:100vh;">
+  <section class="servicios-bg d-flex align-items-center">
     <div class="container">
       <h2 class="text-center mb-4 text-white">Nuestros Servicios</h2>
       <div class="row g-4">
@@ -80,8 +80,8 @@
   </section>
 
   <a href="https://wa.me/5491158700201?text=Necesito%20información%20acerca%20de%20los%20techos%20que%20usted%20coloca" 
-     class="btn btn-success btn-lg position-fixed" 
-     style="bottom:20px; right:20px; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center;">
+     class="btn btn-success btn-lg position-fixed whatsapp-btn"
+     title="Contactar por WhatsApp">
      <i class="fab fa-whatsapp fa-2x"></i>
   </a>
 
@@ -90,10 +90,10 @@
   <div class="container">
     <p class="mb-1">📞 11 5870 0201 | 📍 Lobos 870 - Paso del Rey | ✉ info@ejemplo.com</p>
     <div class="d-flex justify-content-center">
-      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="btn btn-social mx-2 text-white" title="Visitar Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="btn btn-social mx-2 text-white" title="Visitar Instagram"><i class="bi bi-instagram"></i></a>
       <a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
-         class="btn btn-social mx-2 text-white"><i class="bi bi-whatsapp"></i></a>
+         class="btn btn-social mx-2 text-white" title="Contactar por WhatsApp"><i class="bi bi-whatsapp"></i></a>
     </div>
   </div>
 </footer>
@@ -109,7 +109,7 @@
 
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
-   class="whatsapp-float" target="_blank">
+   class="whatsapp-float" target="_blank" rel="noopener" title="Contactar por WhatsApp">
   <i class="bi bi-whatsapp"></i>
 </a>
 

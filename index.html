@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Techos Marcelo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
@@ -34,9 +34,9 @@
 
     <!-- Indicadores -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Imagen 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
     </div>
 
     <!-- Imágenes -->
@@ -66,11 +66,13 @@
     </div>
 
     <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Anterior">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Siguiente">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
 
@@ -79,14 +81,19 @@
     <div class="container">
       <h2 class="text-center mb-4">Nuestros Servicios</h2>
       <div class="row g-4">
-        <div class="col-md-3">
-          <div class="card shadow-sm h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title">🔨 Reparación de techos</h5>
-              <p class="card-text">Soluciones rápidas y seguras para goteras, filtraciones y daños.</p>
-            </div>
-          </div>
-        </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                              <img src="img/reparacion-techos.jpg" class="img-fluid mb-3" alt="Reparación de techos">
+                                <h5 class="card-title">🔨 Reparación de techos</h5>
+                                <p class="card-text">Soluciones rápidas y seguras para goteras, filtraciones y daños.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#repairModal">Más Información</a>
+                        </div>
+                    </div>
+                </div>
         <div class="col-md-3">
           <div class="card shadow-sm h-100 text-center">
             <div class="card-body">
@@ -114,16 +121,38 @@
       </div>
     </div>
   </section>
-
+  
+      <!-- Modal for Repair Article -->
+    <div class="modal fade" id="repairModal" tabindex="-1" aria-labelledby="repairModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="repairModalLabel">Reparación de Techos con Techos Marcelo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/Imagen004.jpg" class="img-fluid" alt="Reparación de techos">
+                        </div>
+                        <div class="col-md-6">
+                            <p>En Argentina, las lluvias y tormentas pueden dañar los techos, causando goteras, filtraciones y riesgos estructurales. En **Techos Marcelo**, con más de 20 años de experiencia, ofrecemos soluciones rápidas y seguras en Paso del Rey. Reparamos filtraciones, daños por tormentas y aplicamos impermeabilizaciones duraderas. ¡Solicita un presupuesto gratuito hoy!</p>
+                            <a href="#presupuesto" class="btn btn-primary mt-auto mt-5">Solicitar Presupuesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
    
 <footer class="bg-dark text-white text-center py-4">
   <div class="container">
     <p class="mb-1">📞 11 5870 0201 | 📍 Lobos 870 - Paso del Rey | ✉ info@ejemplo.com</p>
     <div class="d-flex justify-content-center">
-      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="btn btn-social mx-2 text-white"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="btn btn-social mx-2 text-white" title="Visítanos en Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="btn btn-social mx-2 text-white" title="Visítanos en Instagram"><i class="bi bi-instagram"></i></a>
       <a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
-         class="btn btn-social mx-2 text-white"><i class="bi bi-whatsapp"></i></a>
+         class="btn btn-social mx-2 text-white" title="Contactar por WhatsApp"><i class="bi bi-whatsapp"></i></a>
     </div>
   </div>
 </footer>
@@ -134,7 +163,7 @@
 
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/541158700201?text=Necesito%20informacion%20acerca%20de%20los%20techos%20que%20usted%20coloca"
-   class="whatsapp-float" target="_blank">
+   class="whatsapp-float" target="_blank" rel="noopener" title="Contactar por WhatsApp">
   <i class="bi bi-whatsapp"></i>
 </a>
 
