@@ -21,6 +21,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+.presupuesto-bg .container {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+} 
 .galeria-bg {
     background: url('../img/galeria-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -89,7 +96,13 @@ footer .btn-social:hover .bi-instagram {
 footer .btn-social:hover .bi-whatsapp {
   color: #25d366;
 }
-
+.contacto-bg .container {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
 
 .contacto-box {
   background: rgba(255, 255, 255, 0.2);
